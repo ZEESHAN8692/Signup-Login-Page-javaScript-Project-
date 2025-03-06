@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>sign | JavaScript Project</title>
+    <style>
+      body {
+        background-image: url(Static/22.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      #cercle {
+        background-color: transparent;
+        box-shadow: 0px 0px 70px rgb(139, 240, 139) inset;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+      }
+      #cercle:hover {
+        box-shadow: 0px 0px 500px white;
+      }
+
+      div {
+        position: sticky;
+        justify-content: center;
+      }
+      #login-password,
+      #login-email {
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: transparent;
+        margin-top: 20px;
+        border: 1px solid gray;
+        padding-left: 20px;
+        outline: none;
+      }
+      #login-btn {
+        background-color: rgb(139, 240, 139);
+        border-radius: 20px;
+        width: 220px;
+        height: 35px;
+        border: 1px solid gray;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cercle">
+      <form>
+        <h1>Login</h1>
+        <input type="email" placeholder="email" id="login-email" /><br />
+        <input
+          type="password"
+          placeholder="Password"
+          id="login-password"
+        /><br />
+        <br />
+        <button id="login-btn">Login</button>
+        <br /><br />
+        <p style="font-family: 'monospace'">
+          I have not Account : <a href="signup.html">Sign Up</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
