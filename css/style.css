@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #490648;
+    color: white;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.Dashboard{
+    font-weight: 800;
+}
+.Logout{
+    width: 150px;
+    height: 34px;
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.emoji{
+    display: flex;
+    justify-content: center;
+}
