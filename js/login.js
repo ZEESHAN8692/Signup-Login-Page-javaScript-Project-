@@ -26,5 +26,5 @@ Login();
 
 function Logout() {
   alert("are sure!");
-  window.location.href = "../login.html";
+  window.location.href = "../index.html";
 }

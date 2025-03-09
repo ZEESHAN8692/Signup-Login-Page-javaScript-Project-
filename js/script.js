@@ -9,7 +9,8 @@ const signUp = () => {
       localStorage.setItem("signUpEmail", signUpEmail);
       localStorage.setItem("signUpPassword", signUpPassword);
       alert("Sign Up Successfull");
-      window.location.href = "../login.html";
+
+      window.location.href = "../index.html";
     } else if (!signUpPassword && !signUpEmail) {
       alert("Please Enter Value");
     }
