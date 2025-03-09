@@ -10,7 +10,7 @@ const signUp = () => {
       localStorage.setItem("signUpPassword", signUpPassword);
       alert("Sign Up Successfull");
 
-      window.location.href = "../index.html";
+      window.location.href = "Signup-Login-Page-javaScript-Project-/index.html";
     } else if (!signUpPassword && !signUpEmail) {
       alert("Please Enter Value");
     }
