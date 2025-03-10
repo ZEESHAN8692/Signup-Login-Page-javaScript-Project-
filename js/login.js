@@ -9,8 +9,16 @@ const Login = () => {
     const signUpPassword = localStorage.getItem("signUpPassword");
 
     if (loginEmail === sighUpEmail && loginPassword === signUpPassword) {
-      alert("Login Successfull");
-      window.location.href = "home.html";
+      // alert("Login Successfull");
+      Swal.fire({
+        title: "Login Successful!",
+        icon: "success",
+        draggable: true,
+      }).then((result) => {
+        if (result) {
+          window.location.href = "home.html";
+        }
+      });
     } else if (loginEmail !== sighUpEmail) {
       alert("Wrong Email Id");
     } else if (loginPassword !== signUpPassword) {
@@ -25,6 +33,11 @@ const Login = () => {
 Login();
 
 function Logout() {
-  alert("are sure!");
-  window.location.href = "index.html";
+  // alert("are sure!");
+  // window.location.href = "index.html";
+  Swal.fire("Are sure!").then((result) => {
+    if (result) {
+      window.location.href = "index.html";
+    }
+  });
 }
